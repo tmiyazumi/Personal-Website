@@ -1,0 +1,34 @@
+.navbar {
+    background-color: black;
+    padding: 1rem;
+}
+  
+.navbar ul {
+    list-style: none;
+    margin: 1%;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+  /* Text align left side for one part */
+.navbar left {
+    text-align: left;
+    color: white;
+    margin-right: auto;
+}
+  
+.navbar li {
+    display: inline-block;
+    margin-right: 3rem;
+}
+  
+.navbar li a {
+    /* make the text algined to the right of the navbar */
+    text-decoration: none;
+    color: white;
+}
+  
+.navbar li a:hover {
+    color: yellow;
+}
