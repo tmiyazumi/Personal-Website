@@ -1,6 +1,6 @@
 import React from 'react';
 import './Home.css';
-import Typical from 'react-typical';
+import { TypeAnimation } from 'react-type-animation';
 
 function Home() {
   return ( 
@@ -12,10 +12,10 @@ function Home() {
         </h1>
         <div classname="textLoop">
           <h2>I'm a{' '}
-          <Typical className="textLoop"
-            loop = {Infinity}
-            wrapper = "b"
-            steps = {[
+          <TypeAnimation className="textLoop"
+            repeat = {Infinity}
+            wrapper = "span"
+            sequence = {[
               'Student 👨🏻‍🎓', 1000,
               'Software Engineer 👨🏻‍💻', 1000,
               'Developer 🪲', 1000,
