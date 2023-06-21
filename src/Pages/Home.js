@@ -1,22 +1,33 @@
 import React from 'react';
 import './Home.css';
-import myImage from '../Assets/taisepic.jpg';
-import { Link } from 'react-router-dom';
+import Typical from 'react-typical';
 
 function Home() {
   return (
-    <div className="home-page">
-      <div className="image-container">
-        <img src={myImage} alt="My Image" className="my-image" />
-      </div>
-      <div className="text-container">
-        <h1>Welcome to Taise's Portfolio</h1>
-        <p>I am a aspring 4th year CS major at University of Florida! I am currently interning at Capital One as a SWE intern in the Enterprise Data Science and Machine Learning Team.</p>
-        <Link to="/about">
-          <button>Go to About Page</button>
-        </Link>
+    <div className="dark-overlay">
+      <div className="bg"></div>
+      <div class="carousel-caption">
+        <h1 classname = "intro-text">
+            Hello! こんにちは！ I'm Taise Miyazumi
+        </h1>
+        <div classname="textLoop">
+          <h2>I'm a{' '}
+          <Typical className="textLoop"
+            loop = {Infinity}
+            wrapper = "b"
+            steps = {[
+              'Student 👨🏻‍🎓', 1000,
+              'Software Engineer 👨🏻‍💻', 1000,
+              'Developer 🪲', 1000,
+              'Athlete (for fun) ⚾️', 1000,
+            ]}
+          />
+          </h2>
+        </div>
+        <a class="btn btn-secondary" href="/about" role="button">Learn More About Me!</a>
       </div>
     </div>
+    
 
   );
 }

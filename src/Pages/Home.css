@@ -1,45 +1,46 @@
-.home-page {
-    display: flex;
-    align-items: center;
-  }
-  
-  .image-container {
-    flex: 1;
-    text-align: center;
-  }
-  
-  .my-image {
-    max-width: 100%;
-    max-height: 100%;
-  }
-  
-  .text-container {
-    /* center the content */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
-    padding: 2rem;
-    
-  }
-  
-  .text-container h1 {
-    font-size: 2rem;
-  }
-  
-  .text-container p {
-    font-size: 1.2rem;
-  }
+*{
+  font-family: monospace;
+  font-size: large;
+}
 
-  .text-container button {
-    color: white;
-    background-color: blue;
-    font-size: 1.2rem;
-    padding: 0.5rem;
-    border-radius: 0.5rem;
-    margin-top: 5rem;
-    cursor: pointer;
-    
-  }
-  
+body, html {
+  height: 100%;
+}
+
+.bg {
+  background-image: url(../Assets/home.jpg);
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 30%;
+}
+.dark-overlay {
+  background-color: rgba(0, 0, 0, 0.80);
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+.textLoop{
+  color: yellow;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+.carousel-caption {
+  top: 40%;
+  bottom: auto;
+}
+
+.intro-text{
+  color: white;
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 1;
+}
