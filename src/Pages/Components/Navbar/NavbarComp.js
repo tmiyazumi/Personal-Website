@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import linkedin from '../../../Assets/linkedin.png';
-import '/Users/taisemiyazumi/Local Documents/Coding/Website/my-app/src/Pages/Components/Navbar/NavBarComp.css';
+import './NavBarComp.css';
 
 export default class NavbarComp extends Component {
     render() {
