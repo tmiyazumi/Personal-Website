@@ -1,0 +1,23 @@
+/* this is the style for the container inside the app.js */
+/* you can remove it and just use the card CSS */
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    align-items: center;
+    justify-content: center;
+    /* Have space between the edges and top of page */
+    padding: 2rem;
+    /* background: rgb(75, 53, 118);
+    background: linear-gradient(
+      219deg,
+      rgb(7, 11, 255) 33%,
+      rgba(248, 177, 60, 1) 100%
+    ); */
+    font-family: "Roboto", sans-serif;
+    gap: 50px;
+  }
+  /* ======================================================== */
+ 

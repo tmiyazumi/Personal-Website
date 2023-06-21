@@ -1,17 +1,20 @@
-import Navbar from './Navbar';
-import Home from './Home';
-import About from './About';
-import Experiences from './Experiences';
-import Projects from './Projects';
-import Contact from './Contact';
+// import Navbar from './Pages/Navbar';
+import NavbarNew from './Pages/Components/Navbar/NavbarComp';
+import Home from './Pages/Home';
+import About from './Pages/About';
+import Experiences from './Pages/Experiences';
+import Projects from './Pages/Projects';
+import Contact from './Pages/Contact';
 import { Routes ,Route, BrowserRouter } from 'react-router-dom';
 import { Router } from 'react-router';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
+   
     <BrowserRouter>
-      <Navbar /> 
+    <NavbarNew />
       <Routes>
           <Route index element={<Home />} />
           <Route path="/about" element={<About />} />

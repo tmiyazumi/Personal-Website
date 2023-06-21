@@ -1,7 +1,7 @@
 import React from 'react';
-import './Navbar.css';
+import "./Navbar.css";
 // import the pngwing.com logo 
-import linkedin from './linkedin.png';
+import linkedin from '../Assets/linkedin.png';
 
 function Navbar() {
     return (
