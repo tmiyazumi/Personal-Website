@@ -3,7 +3,7 @@ import './Home.css';
 import Typical from 'react-typical';
 
 function Home() {
-  return (
+  return ( 
     <div className="dark-overlay">
       <div className="bg"></div>
       <div class="carousel-caption">
