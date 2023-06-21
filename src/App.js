@@ -8,7 +8,7 @@ import Contact from './Pages/Contact';
 import { Routes ,Route, BrowserRouter } from 'react-router-dom';
 import { Router } from 'react-router';
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css'; 
 
 function App() {
   return (
