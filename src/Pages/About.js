@@ -1,6 +1,6 @@
 import React from 'react';
 import "./About.css";
-import myImage from './taisepic.jpg';
+import myImage from '../Assets/taisepic.jpg';
 
 function About() {
   return (

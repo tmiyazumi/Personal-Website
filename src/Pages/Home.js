@@ -1,6 +1,6 @@
 import React from 'react';
 import './Home.css';
-import myImage from './taisepic.jpg';
+import myImage from '../Assets/taisepic.jpg';
 import { Link } from 'react-router-dom';
 
 function Home() {
