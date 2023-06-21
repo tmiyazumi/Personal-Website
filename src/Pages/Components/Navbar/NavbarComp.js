@@ -4,7 +4,7 @@ import linkedin from '../../../Assets/linkedin.png';
 import './NavBarComp.css';
 
 export default class NavbarComp extends Component {
-    render() {
+    render() { 
         return (
             <Navbar bg="dark" variant="dark" expand="lg">
                 <Navbar.Brand href="/" >Taise Miyazumi's Portfolio</Navbar.Brand>
