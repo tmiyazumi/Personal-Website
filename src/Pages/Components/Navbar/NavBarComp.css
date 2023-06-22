@@ -1,7 +1,13 @@
-
 .nav-link:hover{
     color: #FA4616 !important;
 }
-.navbar .navbar-brand{
+
+.navbar-brand{
     margin-left:2% !important;
-    }
+}
+
+.navbar {
+    text-align: center;
+    height: auto;
+    
+}

@@ -1,35 +1,26 @@
-import React from 'react';
+import {React, Component} from 'react';
 import "./Navbar.css";
 // import the pngwing.com logo 
 import linkedin from '../Assets/linkedin.png';
+import gators from '../Assets/gators.png';
+import {MenuData} from './MenuData';
 
 function Navbar() {
     return (
-        <nav className="navbar">
+        <nav className='NavbarItems'>
+            <h1>
+                React <i className='fab fa-react'></i>
+            </h1>
             <ul>
-            <left>
-                Taise Miyazumi's Portfolio
-            </left>
-                <li>
-                <a href="/">home</a>
-                </li>
-                <li>
-                <a href="/about">about</a>
-                </li>
-                <li>
-                <a href="/experiences">experiences</a>
-                </li>
-                <li>
-                <a href="/projects">projects</a>
-                </li>
-                <li>
-                <a href="/contact">contact</a>
-                </li>
-                <li>
-                <a href="https://www.linkedin.com/in/taisemiyazumi/">
-                    <img src={linkedin} alt="linkedin" width="30" height="30" />
-                </a>
-                </li>
+                {MenuData.map((item, index) => {
+                    return(
+                        <li key={index}>
+                            <a href = {item.url} className = {item.cName}>
+                                {item.title}
+                            </a>
+                        </li>
+                    )
+                })}
             </ul>
         </nav>
     );
